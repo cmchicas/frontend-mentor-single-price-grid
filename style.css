@@ -1,6 +1,86 @@
 @import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+*{
+    box-sizing: border-box;
+}
 
 body {
     font-family: 'Karla', sans-serif;
     font-weight: 700;
+    margin: 0px;
+    padding: 0px;
+}
+
+.container{
+    height: 100vh;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2.20%);
+    grid-template-rows: repeat(2,30%);
+    grid-template-areas: 'header header' 'singup whyus';
+    background-color: hsl(204, 43%, 93%);
+    justify-content: center;
+    align-content: center;
+}
+
+.header{
+    grid-area: header;
+    padding: 20px;
+    background-color: white;
+}
+
+.singUp{
+    grid-area: singup;
+    padding: 20px;
+    background-color: hsl(179, 74%, 42%);
+}
+
+.WhyUs{
+    grid-area: whyus;
+    padding: 20px;
+    background-color: hsl(179, 47%, 52%);
+}
+
+.cyan{
+    color: hsl(179, 74%, 42%)
+}
+
+.white{
+    color: white;
+}
+
+.brightYellow{
+    color: hsl(71, 73%, 54%);
+}
+
+.lightGray{
+    color: hsl(195, 2%, 67%);
+}
+
+.lightGrayT{
+    color: hsla(203, 44%, 93%, 0.925);
+    font-family: 'Karla', sans-serif;
+    font-weight: 400;
+}
+
+.buttom{
+    background-color: hsl(71, 73%, 54%);
+}
+
+ul{
+    list-style: none;
+}
+
+.mi{
+    margin-left: 40px;
+}
+
+.price{
+    font-size: 40px;
+    color: white;
+}
+
+.text{
+    font-weight: 400;
+    font-size: 20px;
+    color: rgba(216, 191, 216, 0.836);
 }
